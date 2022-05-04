@@ -506,7 +506,7 @@ a:hover {
   }
   table {
     margin-top: 25px;
-    width: 90%;
+    width: auto;
     color: rgb(0, 0, 0);
     margin-bottom: 60px;
     margin-left: 20px;
@@ -535,7 +535,7 @@ a:hover {
 
   td i {
     transition: 0.5s;
-    padding: 4px 8px;
+
     color: white;
   }
 
@@ -548,7 +548,7 @@ a:hover {
     font-weight: bold;
   }
   td {
-    padding: 14px 13px;
+    padding: 8px 8px;
     font-size: 10px;
   }
   tr {

@@ -94,10 +94,10 @@ a {
   margin-left: 5px;
 }
 .rema {
-  box-shadow: 0px 10px 17px 0px rgba(130, 123, 66, 255);
+  box-shadow: 0px 10px 17px 0px rgb(54, 49, 49);
 }
 .santi {
-  box-shadow: 0px 10px 17px 0px rgba(8, 39, 131, 255);
+  box-shadow: 0px 10px 17px 0px rgb(26, 124, 26);
 }
 .drake {
   box-shadow: 0px 10px 17px 0px rgba(193, 193, 193, 0.75);
@@ -147,10 +147,6 @@ span {
 
 .sub-body {
   padding: 1% 5%;
-  display: flex;
-  height: 90vh;
-  justify-content: center;
-  align-items: center;
 }
 
 .album-details {
@@ -291,4 +287,16 @@ h6 {
   color: white;
   padding: 5px 5px;
   border-radius: 50px;
+}
+.nav li a {
+  text-decoration: none;
+  color: var(--card-bg);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color-white);
+}
+a:hover {
+  color: rgb(74, 140, 190);
 }

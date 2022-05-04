@@ -316,7 +316,10 @@ a:hover {
   .populartracks a {
     font-size: 13px;
   }
-
+  .album {
+    justify-content: center;
+    align-items: center;
+  }
   body {
     background-color: var(--header-bg);
   }
@@ -471,11 +474,11 @@ a:hover {
     margin: 0px 25px;
   }
 
-  .theme-block1 #theme {
+  .theme-block1 #theme1 {
     display: none;
   }
 
-  .theme-block1 #theme + label::before {
+  .theme-block1 #theme1 + label::before {
     content: "";
     background: url(icons8-close.svg);
     display: block;

@@ -409,3 +409,289 @@ caption {
 a:hover {
   color: rgb(0, 0, 0);
 }
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 1000px) {
+  .main-body {
+    display: flex;
+    flex-direction: column;
+  }
+  h1,
+  .newrelease a,
+  .populartracks a {
+    font-size: 13px;
+  }
+
+  body {
+    background-color: var(--header-bg);
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 2% 5%;
+    width: auto;
+    height: auto;
+    background-color: var(--header-bg);
+  }
+  .nav li {
+    padding: 15px;
+  }
+
+  .nav ul {
+    margin: 0;
+    padding: 2% 0%;
+  }
+  .browse,
+  .library {
+    display: block;
+  }
+  #close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  #clos {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  #respnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    background-color: var(--header-bg);
+    top: 0;
+    right: 0;
+    padding-top: 50px;
+    left: 0;
+    bottom: 0;
+  }
+  .menu {
+    display: flex;
+  }
+
+  #mainbg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .album-details {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .album-details h1 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .album-details h2 {
+    font-size: 17px;
+    margin: 15px 0px;
+  }
+  .album-details h3 {
+    font-size: 14px;
+  }
+  .album {
+    min-height: auto;
+    width: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgb(0, 0, 0)),
+      url(drake4.jpg);
+    background-position: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  table {
+    margin-top: 25px;
+    width: auto;
+    color: rgb(0, 0, 0);
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    caption-side: top;
+  }
+
+  caption,
+  th {
+    text-align: left;
+    font-size: 23px;
+  }
+
+  table,
+  th,
+  td {
+    border-collapse: collapse;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(248, 246, 246, 0.21);
+  }
+  tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.095);
+  }
+
+  td i {
+    transition: 0.5s;
+    padding: 4px 8px;
+    color: white;
+  }
+
+  tr td {
+    font-size: 10px;
+  }
+
+  table a {
+    color: rgb(195, 180, 65);
+    font-weight: bold;
+  }
+  td {
+    padding: 14px 13px;
+    font-size: 10px;
+  }
+  tr {
+    color: white;
+  }
+  .searchbar {
+    display: none;
+  }
+  .song h6 {
+    font-size: 6px;
+    margin: 0;
+  }
+  .song img {
+    height: 20px;
+  }
+
+  .progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 0px 0px 0px;
+    height: 5px;
+    width: 100px;
+  }
+
+  .progress {
+    background-color: #000;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
+
+  #title,
+  #artist,
+  #current,
+  #duration,
+  .time span {
+    font-size: 8px;
+  }
+  #cover {
+    height: 30px;
+  }
+  .controls i {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    border-radius: 50px;
+  }
+  #play {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1px 1px;
+    border-radius: 50px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0% 4%;
+    justify-content: space-evenly;
+  }
+  .theme-block1 {
+    margin: 0px 0px;
+    padding: 10px;
+  }
+  .theme-block1 {
+    margin: 0px 25px;
+  }
+
+  .theme-block1 #theme1 {
+    display: none;
+  }
+
+  .theme-block1 #theme1 + label::before {
+    content: "";
+    background: url(icons8-close.svg);
+    display: block;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+
+  .theme-block2 #theme2:checked + label::before {
+    background: url(icon-sun.svg);
+  }
+  .theme-block2 {
+    margin: 0px 0px;
+    padding: 10px;
+  }
+  .theme-block2 {
+    margin: 0px 25px;
+  }
+
+  .theme-block2 #theme2 {
+    display: none;
+  }
+
+  .theme-block2 #theme2 + label::before {
+    content: "";
+    background: url(icon-moon.svg);
+    display: block;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+  .theme-block3 {
+    margin: 0px 0px;
+    display: block;
+  }
+
+  .theme-block3 #themee {
+    display: none;
+  }
+
+  .theme-block3 #themee + label::before {
+    content: "";
+    background: url(icons8-menu.svg);
+    display: block;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+
+  .disablemenu {
+    visibility: hidden;
+  }
+  .displayalbum {
+    margin-left: 0%;
+    width: 50%;
+    height: 50%;
+  }
+}

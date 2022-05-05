@@ -93,34 +93,8 @@ a {
   border: 1px solid grey;
   margin-left: 5px;
 }
-.album-1 {
-  box-shadow: 0px 10px 17px 0px rgb(44, 114, 144);
-}
-.album-2 {
-  box-shadow: 0px 10px 17px 0px rgb(36, 37, 37);
-}
-.album-3 {
-  box-shadow: 0px 10px 17px 0px rgb(170, 170, 170);
-}
-.album-4 {
-  box-shadow: 0px 10px 17px 0px rgb(190, 153, 66);
-}
-.album-5 {
-  box-shadow: 0px 10px 17px 0px rgb(35, 35, 35);
-}
-.album-6 {
-  box-shadow: 0px 10px 17px 0px rgb(141, 55, 55);
-}
-.album-7 {
-  box-shadow: 0px 10px 17px 0px rgb(5, 84, 117);
-}
-.album-8 {
-  box-shadow: 0px 10px 17px 0px rgb(194, 189, 158);
-}
-.album-9 {
-  box-shadow: 0px 10px 17px 0px rgb(28, 116, 47);
-}
-.album-10 {
+
+.album-details img {
   box-shadow: 0px 10px 17px 0px rgb(40, 40, 40);
 }
 .main {
@@ -171,9 +145,13 @@ span {
   justify-content: space-between;
   padding: 1% 0%;
 }
+
+.album-details h4 {
+  text-align: center;
+}
 .album-details img {
   width: 210px;
-  border-radius: 15px;
+  border-radius: 100px;
   height: 210px;
   margin-bottom: 20px;
 }
@@ -407,8 +385,8 @@ a:hover {
     margin: 0;
   }
   .album-details img {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
   }
   .searchbar {
     display: none;

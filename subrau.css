@@ -9,7 +9,7 @@
   cursor: pointer;
   margin: 0px 10px 0px 0px;
   height: 4px;
-  width: 900px;
+  width: 920px;
 }
 
 .progress {
@@ -49,10 +49,11 @@ h1 {
 }
 
 footer {
-  height: 9vh;
+  height: 7vh;
   position: fixed;
   background-color: var(--font-color);
   bottom: 0;
+
   width: 100%;
 }
 
@@ -65,8 +66,9 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: var(--main-bg);
-  height: 100vh;
+  height: auto;
   width: 20%;
+
   padding: 12px 0px;
 }
 
@@ -93,36 +95,7 @@ a {
   border: 1px solid grey;
   margin-left: 5px;
 }
-.album-1 {
-  box-shadow: 0px 10px 17px 0px rgb(44, 114, 144);
-}
-.album-2 {
-  box-shadow: 0px 10px 17px 0px rgb(36, 37, 37);
-}
-.album-3 {
-  box-shadow: 0px 10px 17px 0px rgb(170, 170, 170);
-}
-.album-4 {
-  box-shadow: 0px 10px 17px 0px rgb(190, 153, 66);
-}
-.album-5 {
-  box-shadow: 0px 10px 17px 0px rgb(35, 35, 35);
-}
-.album-6 {
-  box-shadow: 0px 10px 17px 0px rgb(141, 55, 55);
-}
-.album-7 {
-  box-shadow: 0px 10px 17px 0px rgb(5, 84, 117);
-}
-.album-8 {
-  box-shadow: 0px 10px 17px 0px rgb(194, 189, 158);
-}
-.album-9 {
-  box-shadow: 0px 10px 17px 0px rgb(28, 116, 47);
-}
-.album-10 {
-  box-shadow: 0px 10px 17px 0px rgb(40, 40, 40);
-}
+
 .main {
   background-color: var(--header-bg);
   width: 100%;
@@ -140,24 +113,13 @@ span {
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: sticky;
+  top: 0px;
   justify-content: space-between;
   background-color: var(--main-bg);
   height: 8vh;
   border-left: 1px solid rgba(0, 0, 0, 0.247);
   padding: 0% 5%;
-}
-
-.newrelease {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0% 0%;
-}
-.populartracks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0% 0%;
 }
 
 .sub-body {
@@ -167,14 +129,13 @@ span {
 .album-details {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 1% 0%;
 }
 .album-details img {
-  width: 210px;
+  width: 200px;
   border-radius: 15px;
-  height: 210px;
+  height: 200px;
   margin-bottom: 20px;
 }
 
@@ -217,34 +178,16 @@ input {
   height: 5vh;
   padding: 0px 10px;
 }
-.song {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  background-color: var(--main-bg);
-  border-radius: 20px;
-  width: 100%;
-  padding: 0% 2%;
-  box-sizing: border-box;
-  height: 8vh;
-}
-.song img {
-  height: 6vh;
-}
-.song h6 {
-  font-size: 15px;
-}
-.popularsongs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 40px;
-  margin-top: 10px;
-  grid-row-gap: 15px;
-}
-footer {
+
+.nonvisible {
   display: none;
+  flex-direction: row;
+  align-items: center;
+  padding: 0% 4%;
+  justify-content: space-between;
+}
+.visible {
+  display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0% 4%;
@@ -303,6 +246,110 @@ h6 {
   padding: 5px 5px;
   border-radius: 50px;
 }
+
+.album {
+  min-height: auto;
+  width: 1300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgb(0, 0, 0)),
+    url(https://thefader-res.cloudinary.com/private_images/w_750,c_limit,f_auto,q_auto:eco/0R7A0033_d10gta/0R7A0033_d10gta.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.displayalbum {
+  width: 23%;
+  height: 24%;
+  margin-left: 5%;
+  padding-top: 48px;
+}
+.album-details h2 {
+  color: white;
+  margin-bottom: 12px;
+  margin: 20px 0px;
+  font-size: 26px;
+}
+
+.album-details h3 {
+  color: rgba(255, 255, 255, 0.685);
+  font-size: 18.6px;
+  margin-bottom: 12px;
+  margin: 18px 0px;
+}
+
+#mainbg {
+  display: flex;
+  flex-direction: row;
+}
+
+.album-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 40px;
+}
+.album-details h1 {
+  color: #fff;
+  font-size: 28.6px;
+}
+table {
+  margin-top: 25px;
+  width: 940px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 60px;
+  margin-left: 62px;
+
+  caption-side: top;
+}
+
+caption,
+th {
+  text-align: left;
+  font-size: 23px;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(248, 246, 246, 0.21);
+}
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.095);
+}
+
+td i {
+  transition: 0.5s;
+  padding: 7px 8px;
+  color: white;
+  border-radius: 105px;
+}
+
+tr td {
+  font-size: 16px;
+}
+
+table a {
+  color: rgb(195, 180, 65);
+  font-weight: bold;
+}
+td {
+  padding: 15px 16px;
+  font-size: 16px;
+}
+tr {
+  color: white;
+}
+caption {
+  color: white;
+  margin: 14px 0px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
 .nav li a {
   text-decoration: none;
   color: var(--card-bg);
@@ -322,6 +369,7 @@ a:hover {
 .theme-block3 {
   display: none;
 }
+
 @media only screen and (min-device-width: 300px) and (max-device-width: 1000px) {
   .main-body {
     display: flex;
@@ -406,14 +454,136 @@ a:hover {
     padding: 0;
     margin: 0;
   }
-  .album-details img {
-    width: 180px;
-    height: 180px;
+  .album-details h1 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .album-details h2 {
+    font-size: 17px;
+    margin: 15px 0px;
+  }
+  .album-details h3 {
+    font-size: 14px;
+  }
+  .album {
+    min-height: auto;
+    width: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgb(0, 0, 0)),
+      url(rema3.jpg);
+    background-position: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  table {
+    margin-top: 25px;
+    width: auto;
+    color: rgb(0, 0, 0);
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    caption-side: top;
+  }
+
+  caption,
+  th {
+    text-align: left;
+    font-size: 23px;
+  }
+
+  table,
+  th,
+  td {
+    border-collapse: collapse;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(248, 246, 246, 0.21);
+  }
+  tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.095);
+  }
+
+  td i {
+    transition: 0.5s;
+
+    color: white;
+  }
+
+  tr td {
+    font-size: 10px;
+  }
+
+  table a {
+    color: rgb(195, 180, 65);
+    font-weight: bold;
+  }
+  td {
+    padding: 8px 5px;
+    font-size: 10px;
+  }
+  tr {
+    color: white;
   }
   .searchbar {
     display: none;
   }
+  .song h6 {
+    font-size: 6px;
+    margin: 0;
+  }
+  .song img {
+    height: 20px;
+  }
 
+  .progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 0px 0px 0px;
+    height: 5px;
+    width: 100px;
+  }
+
+  .progress {
+    background-color: #000;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
+
+  #title,
+  #artist,
+  #current,
+  #duration,
+  .time span {
+    font-size: 8px;
+  }
+  #cover {
+    height: 30px;
+  }
+  .controls i {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    border-radius: 50px;
+  }
+  #play {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1px 1px;
+    border-radius: 50px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0% 4%;
+    justify-content: space-evenly;
+  }
   .theme-block1 {
     margin: 0px 0px;
     padding: 10px;
@@ -483,11 +653,5 @@ a:hover {
     margin-left: 0%;
     width: 50%;
     height: 50%;
-  }
-}
-@media only screen and (min-device-width: 800px) and (max-device-width: 1000px) {
-  .album-details img {
-    width: 250px;
-    height: 250px;
   }
 }

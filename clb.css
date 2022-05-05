@@ -140,23 +140,6 @@ span {
   padding: 0% 5%;
 }
 
-.newrelease {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0% 0%;
-}
-.populartracks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0% 0%;
-}
-
-.sub-body {
-  padding: 1% 5%;
-}
-
 .album-details {
   display: flex;
   flex-direction: row;
@@ -209,32 +192,7 @@ input {
   height: 5vh;
   padding: 0px 10px;
 }
-.song {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  background-color: var(--main-bg);
-  border-radius: 20px;
-  width: 100%;
-  padding: 0% 2%;
-  box-sizing: border-box;
-  height: 8vh;
-}
-.song img {
-  height: 6vh;
-}
-.song h6 {
-  font-size: 15px;
-}
-.popularsongs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 40px;
-  margin-top: 10px;
-  grid-row-gap: 15px;
-}
+
 .nonvisible {
   display: none;
   flex-direction: row;
@@ -331,7 +289,7 @@ h6 {
   color: rgba(255, 255, 255, 0.685);
   font-size: 18.6px;
   margin-bottom: 12px;
-  margin: 20px 0px;
+  margin: 18px 0px;
 }
 
 #mainbg {
@@ -409,7 +367,13 @@ caption {
 a:hover {
   color: rgb(0, 0, 0);
 }
-
+.new,
+#menu,
+.theme-block1,
+.theme-block2,
+.theme-block3 {
+  display: none;
+}
 @media only screen and (min-device-width: 300px) and (max-device-width: 1000px) {
   .main-body {
     display: flex;
@@ -547,7 +511,7 @@ a:hover {
 
   td i {
     transition: 0.5s;
-    padding: 4px 8px;
+
     color: white;
   }
 
@@ -560,7 +524,7 @@ a:hover {
     font-weight: bold;
   }
   td {
-    padding: 14px 13px;
+    padding: 8px 5px;
     font-size: 10px;
   }
   tr {
@@ -568,13 +532,6 @@ a:hover {
   }
   .searchbar {
     display: none;
-  }
-  .song h6 {
-    font-size: 6px;
-    margin: 0;
-  }
-  .song img {
-    height: 20px;
   }
 
   .progress-container {
@@ -602,7 +559,7 @@ a:hover {
     font-size: 8px;
   }
   #cover {
-    height: 30px;
+    height: 20px;
   }
   .controls i {
     background-color: rgba(0, 0, 0, 0);
@@ -622,7 +579,9 @@ a:hover {
     flex-direction: row;
     align-items: center;
     padding: 0% 4%;
-    justify-content: space-evenly;
+  }
+  .cta {
+    display: none;
   }
   .theme-block1 {
     margin: 0px 0px;
